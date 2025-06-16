@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Suite">
+
+	<listeners>
+		<listener class-name="com.growth99.listeners.MyListeners"></listener>
+	</listeners>
+	
+
+  <test thread-count="4"  name="Test">
+    <classes>
+   <class name="com.growth99.testcases.loadingTesting.LoadTestingFor1stSetof178Website"/>
+     <class name="com.growth99.testcases.loadingTesting.LoadTestingFor2ndSetOf178website"/> 
+     <class name="com.growth99.testcases.loadingTesting.LoadTestingFor3rdSetof178Website"/>
+      <class name="com.growth99.testcases.loadingTesting.LoadTestingFor4thSetof178Website"/>
+      <class name="com.growth99.testcases.loadingTesting.LoadTestingFromSevenZeroFourSlNo"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

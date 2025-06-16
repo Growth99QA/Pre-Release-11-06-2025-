@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suites Execution" parallel="true" thread-count="3">
+    <suite-files>
+        <suite-file path="testNgXmlFiles/Cherry.xml" />
+        <suite-file path="testNgXmlFiles/Ruma.xml" />
+    </suite-files>
+</suite>
