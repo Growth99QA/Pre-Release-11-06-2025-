@@ -69,7 +69,13 @@ public class RumaPage {
 	@FindBy (xpath="//img[contains(@data-dt-location,'attachment/1-22/')]")
 	WebElement botoxServiceImage;
 
+	@FindBy (xpath="//nav[@class='navigation']//span[contains(text(),'Blog')]")
 
+		WebElement BlogMenu;
+
+	public void ClickOnBlog() {
+			webUtils.clickOnElement(BlogMenu);
+		}
 	public void switchBackToDefaultContent()
 	{
 		webUtils.switchToDefaultContent();
