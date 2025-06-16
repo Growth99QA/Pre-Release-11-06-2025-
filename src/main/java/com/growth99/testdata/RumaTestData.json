@@ -14,5 +14,14 @@
 	"validateBotoxAndDysportServiceSection":{
 		"botoxServiceTitle":"Botox and Dysport",
 		"botoxServiceUrl":"https://ada1.gogroth.com/botox-dysport-in-li-ut/"
+	},
+	"validateBlogMenu":{
+
+				"expectedBlogTitle":"BLOG",
+
+				"assertValidationText":"Title validation failed",
+
+				"BlogPageUrl":"https://ada1.gogroth.com/blog/"	
+
 	}
 }
