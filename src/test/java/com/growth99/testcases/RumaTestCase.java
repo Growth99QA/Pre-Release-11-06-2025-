@@ -104,6 +104,19 @@ public class RumaTestCase extends BaseClass {
 		
 		
 	}
+@Test(priority = 0)
+
+	public void validateBlogMenu(){
+		
+		JsonNode testData=	rumaJsonData.get("validateBlogMenu");
+		rumaPage.navigateToHomePage();
+		String expectedBlogTitle = testData.get("expectedBlogTitle").asText();
+		rumaPage.ClickOnBlog();
+		String actualBlogTitle =	rumaPage.getPageTitle();
+		System.out.println("Actual Blog title : " +actualBlogTitle );
+		Assert.assertEquals(actualBlogTitle, expectedBlogTitle, testData.get("assertValidationText").asText());
+	}
+	
 	
 	@AfterClass
 	public void tearDown() {
